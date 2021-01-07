@@ -17,6 +17,8 @@
 		4E79A8B925A7947600499F34 /* Facebook_interview_NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8B825A7947600499F34 /* Facebook_interview_NewsAppUITests.swift */; };
 		4E79A8CA25A79DD100499F34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8C925A79DD100499F34 /* Constants.swift */; };
 		4E79A8D025A7B8A000499F34 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8CF25A7B8A000499F34 /* ResultModel.swift */; };
+		4E79A8D925A7BD7800499F34 /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8D825A7BD7800499F34 /* Routers.swift */; };
+		4E79A8DE25A7C26B00499F34 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8DD25A7C26B00499F34 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		4E79A8BA25A7947600499F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E79A8C925A79DD100499F34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E79A8CF25A7B8A000499F34 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		4E79A8D825A7BD7800499F34 /* Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
+		4E79A8DD25A7C26B00499F34 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		4E79A89525A7947400499F34 /* Facebook_interview_NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E79A8D725A7BD6C00499F34 /* Services */,
 				4E79A8D625A7BA7E00499F34 /* StoryBoards */,
 				4E79A8D525A7BA6C00499F34 /* Constant */,
 				4E79A8D425A7BA5800499F34 /* ViewControllers */,
@@ -164,6 +169,15 @@
 				4E79A8A125A7947600499F34 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		4E79A8D725A7BD6C00499F34 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4E79A8D825A7BD7800499F34 /* Routers.swift */,
+				4E79A8DD25A7C26B00499F34 /* NetworkService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +314,9 @@
 				4E79A89725A7947400499F34 /* AppDelegate.swift in Sources */,
 				4E79A89925A7947400499F34 /* SceneDelegate.swift in Sources */,
 				4E79A8D025A7B8A000499F34 /* ResultModel.swift in Sources */,
+				4E79A8D925A7BD7800499F34 /* Routers.swift in Sources */,
 				4E79A8CA25A79DD100499F34 /* Constants.swift in Sources */,
+				4E79A8DE25A7C26B00499F34 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
