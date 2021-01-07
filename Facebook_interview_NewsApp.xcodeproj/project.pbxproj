@@ -15,6 +15,7 @@
 		4E79A8A325A7947600499F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E79A8A125A7947600499F34 /* LaunchScreen.storyboard */; };
 		4E79A8AE25A7947600499F34 /* Facebook_interview_NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8AD25A7947600499F34 /* Facebook_interview_NewsAppTests.swift */; };
 		4E79A8B925A7947600499F34 /* Facebook_interview_NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8B825A7947600499F34 /* Facebook_interview_NewsAppUITests.swift */; };
+		4E79A8CA25A79DD100499F34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8C925A79DD100499F34 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4E79A8B425A7947600499F34 /* Facebook_interview_NewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Facebook_interview_NewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E79A8B825A7947600499F34 /* Facebook_interview_NewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook_interview_NewsAppUITests.swift; sourceTree = "<group>"; };
 		4E79A8BA25A7947600499F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E79A8C925A79DD100499F34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4E79A89F25A7947600499F34 /* Assets.xcassets */,
 				4E79A8A125A7947600499F34 /* LaunchScreen.storyboard */,
 				4E79A8A425A7947600499F34 /* Info.plist */,
+				4E79A8C925A79DD100499F34 /* Constants.swift */,
 			);
 			path = Facebook_interview_NewsApp;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				4E79A89B25A7947400499F34 /* ViewController.swift in Sources */,
 				4E79A89725A7947400499F34 /* AppDelegate.swift in Sources */,
 				4E79A89925A7947400499F34 /* SceneDelegate.swift in Sources */,
+				4E79A8CA25A79DD100499F34 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
