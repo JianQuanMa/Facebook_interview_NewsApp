@@ -7,11 +7,10 @@
 
 import Foundation
 
-struct Result: Decodable{
+struct NewsResult: Decodable{
     let status: String
     let totalResults: String
     let articles: [Article]
-    
 }
 
 struct Article: Decodable{
