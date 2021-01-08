@@ -24,7 +24,6 @@ final class NetworkService{
         completion: @escaping (Result<NewsResult, Error>) -> Void
     ) {
         guard let url = Router().getEverything(with: keyword.keyword) else { return }
-
         URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let self = self else { return }
             if let error = error {
@@ -36,7 +35,6 @@ final class NetworkService{
             
             if let data = data {
                 do {
-                    
                     let result = try self.jsonDecoder.decode(NewsResult.self, from: data)
                     Self.dispatch {
                         completion(.success(result))
