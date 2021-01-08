@@ -7,24 +7,32 @@
 
 import Foundation
 
-struct NewsResult: Decodable{
+// MARK: - Welcome
+struct NewsResult: Codable {
     let status: String
-    let totalResults: String
+    let totalResults: Int
     let articles: [Article]
 }
 
-struct Article: Decodable{
+// MARK: - Article
+struct Article: Codable {
     let source: Source
-    let author: String
-    let title: String
-    let description: String
-    let url: URL
-    let urlToImage: URL
-    let publishedAt: String
-    let content: String
+    let author: String?
+    let title, articleDescription: String
+    let url: String
+    let urlToImage: String?
+    let publishedAt: Date
+    let content: String?
+
+    enum CodingKeys: String, CodingKey {
+        case source, author, title
+        case articleDescription = "description"
+        case url, urlToImage, publishedAt, content
+    }
 }
 
-struct Source: Decodable{
+// MARK: - Source
+struct Source: Codable {
     let id: String?
     let name: String
 }

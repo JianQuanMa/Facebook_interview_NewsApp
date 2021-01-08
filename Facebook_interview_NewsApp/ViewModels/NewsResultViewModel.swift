@@ -14,7 +14,7 @@ protocol NewsResultViewModelDelegate: AnyObject{
 class NewsResultViewModel{
     weak var newsResultViewModelDelegate: NewsResultViewModelDelegate?
     var decoder = JSONDecoder()
-    var newsResult = NewsResult(status: "", totalResults: "", articles: []){
+    var newsResult = NewsResult(status: "", totalResults: 0, articles: []){
         didSet{
         //    NewsResult.init(status: "", totalResults: "", articles: [])
             newsResultViewModelDelegate?.update()
