@@ -13,3 +13,8 @@ struct Router{
         return url
     }
 }
+
+enum Constants {
+    static let apiKeyString = "255fb6a0c8e44a2f9ecd4d008e1db384"
+    static let baseURLString = "https://newsapi.org/v2/everything"
+}

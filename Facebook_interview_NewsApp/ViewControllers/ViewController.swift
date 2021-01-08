@@ -8,13 +8,60 @@
 import UIKit
 
 class ViewController: UIViewController {
-// added something
-    // added sth
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    @IBOutlet weak var totalResults: UILabel!
+    
+    @IBOutlet weak var mainTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let appleKeyword = SearchKeyword(keyword: "apple")
+        
+        NetworkService.shared.getEverything(with: appleKeyword) { [weak self] result in
+            guard let self = self else { return }
+            print("-=- isMainThread111 \(Thread.isMainThread)")
+            switch result {
+            case .failure(let error):
+                print("-=- hand the error however you want")
+            case .success(let result):
+                print("-=- handle the success")
+                
+                self.statusLabel.text = result.status
+                self.totalResults.text = "total results: \(result.totalResults)"
+                
+                self.articles = result.articles
+            }
+        }
+
+        mainTableView.register(UITableViewCell.self, forCellReuseIdentifier: "something")
     }
 
-
+    var articles: [Article] = [] {
+        didSet {
+            mainTableView.reloadData()
+        }
+    }
+    
 }
 
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        articles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "something") else {
+            print("-=- not able to dequeu")
+            return UITableViewCell()
+        }
+        
+        cell.textLabel?.text  = articles[indexPath.row].title
+        
+        return cell
+    }
+    
+    
+}

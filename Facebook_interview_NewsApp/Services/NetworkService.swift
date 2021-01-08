@@ -8,29 +8,54 @@
 import Foundation
 
 final class NetworkService{
-    static let shared = NetService()
+    static let shared = NetworkService()
+    
+    private let jsonDecoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        
+        decoder.dateDecodingStrategy = .iso8601
+        
+        return decoder
+    }()
     private init(){}
     
-    func getEverything(with keyword: String, completion: @escaping (NewsResult) -> Void){
-        guard let url = Router.init().getEverything(with: keyword) else {return}
-        URLSession.shared.dataTask(with: url){ data, response,error in
-            if let error = error{
-                print(error.localizedDescription)
+    func getEverything(
+        with keyword: SearchKeyword,
+        completion: @escaping (Result<NewsResult, Error>) -> Void
+    ) {
+        guard let url = Router().getEverything(with: keyword.keyword) else { return }
+
+        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard let self = self else { return }
+            if let error = error {
+                Self.dispatch {
+                    completion(.failure(error))
+                }
+                return
             }
-            //           else if let response = response{
-            //                guard let httpResponse = response as? HTTPURLResponse else{return}
-            //                switch httpResponse.statusCode{
-            //                    case
-            //                }
-            //           }
-            if let data = data{
-                do{
-                    let result = try JSONDecoder().decode(NewsResult.self, from: data)
-                    completion(result)
-                }catch{
+            
+            if let data = data {
+                do {
+                    
+                    let result = try self.jsonDecoder.decode(NewsResult.self, from: data)
+                    Self.dispatch {
+                        completion(.success(result))
+                    }
+                } catch {
                     print(error.localizedDescription)
                 }
             }
         }.resume()
     }
+    
+    private static func dispatch(block: @escaping () ->Void) {
+        DispatchQueue.main.async(execute: block)
+    }
+    
+}
+
+struct SearchKeyword {
+    let keyword: String
+    
+    static let bitcoin = SearchKeyword(keyword: "bitcoin")
 }

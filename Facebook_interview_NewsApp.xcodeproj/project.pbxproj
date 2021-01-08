@@ -15,7 +15,6 @@
 		4E79A8A325A7947600499F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E79A8A125A7947600499F34 /* LaunchScreen.storyboard */; };
 		4E79A8AE25A7947600499F34 /* Facebook_interview_NewsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8AD25A7947600499F34 /* Facebook_interview_NewsAppTests.swift */; };
 		4E79A8B925A7947600499F34 /* Facebook_interview_NewsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8B825A7947600499F34 /* Facebook_interview_NewsAppUITests.swift */; };
-		4E79A8CA25A79DD100499F34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8C925A79DD100499F34 /* Constants.swift */; };
 		4E79A8D025A7B8A000499F34 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8CF25A7B8A000499F34 /* ResultModel.swift */; };
 		4E79A8D925A7BD7800499F34 /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8D825A7BD7800499F34 /* Routers.swift */; };
 		4E79A8DE25A7C26B00499F34 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8DD25A7C26B00499F34 /* NetworkService.swift */; };
@@ -54,7 +53,6 @@
 		4E79A8B425A7947600499F34 /* Facebook_interview_NewsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Facebook_interview_NewsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E79A8B825A7947600499F34 /* Facebook_interview_NewsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facebook_interview_NewsAppUITests.swift; sourceTree = "<group>"; };
 		4E79A8BA25A7947600499F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E79A8C925A79DD100499F34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E79A8CF25A7B8A000499F34 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		4E79A8D825A7BD7800499F34 /* Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
 		4E79A8DD25A7C26B00499F34 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -112,7 +110,6 @@
 				4E79A8E225A7CC9A00499F34 /* ViewModels */,
 				4E79A8D725A7BD6C00499F34 /* Services */,
 				4E79A8D625A7BA7E00499F34 /* StoryBoards */,
-				4E79A8D525A7BA6C00499F34 /* Constant */,
 				4E79A8D425A7BA5800499F34 /* ViewControllers */,
 				4E79A8CE25A7B88400499F34 /* Models */,
 				4E79A89625A7947400499F34 /* AppDelegate.swift */,
@@ -155,14 +152,6 @@
 				4E79A89A25A7947400499F34 /* ViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		4E79A8D525A7BA6C00499F34 /* Constant */ = {
-			isa = PBXGroup;
-			children = (
-				4E79A8C925A79DD100499F34 /* Constants.swift */,
-			);
-			path = Constant;
 			sourceTree = "<group>";
 		};
 		4E79A8D625A7BA7E00499F34 /* StoryBoards */ = {
@@ -261,7 +250,6 @@
 					};
 					4E79A8A825A7947600499F34 = {
 						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 4E79A89225A7947400499F34;
 					};
 					4E79A8B325A7947600499F34 = {
 						CreatedOnToolsVersion = 12.3;
@@ -327,7 +315,6 @@
 				4E79A8D025A7B8A000499F34 /* ResultModel.swift in Sources */,
 				4E79A8E425A7CCE900499F34 /* NewsResultViewModel.swift in Sources */,
 				4E79A8D925A7BD7800499F34 /* Routers.swift in Sources */,
-				4E79A8CA25A79DD100499F34 /* Constants.swift in Sources */,
 				4E79A8DE25A7C26B00499F34 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -489,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -506,6 +493,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Facebook_interview_NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +512,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Facebook_interview_NewsApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,10 +528,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Facebook_interview_NewsAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,7 +540,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facebook_interview_NewsApp.app/Facebook_interview_NewsApp";
 			};
 			name = Debug;
 		};
@@ -560,10 +547,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Facebook_interview_NewsAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,7 +559,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Facebook_interview_NewsApp.app/Facebook_interview_NewsApp";
 			};
 			name = Release;
 		};
