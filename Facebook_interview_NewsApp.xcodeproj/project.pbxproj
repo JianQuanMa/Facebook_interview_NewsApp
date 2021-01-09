@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0E952A25AA294300C142CB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E952925AA294300C142CB /* DetailViewController.swift */; };
+		4E0E953025AA53BB00C142CB /* Extension+ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0E952F25AA53BB00C142CB /* Extension+ImageView.swift */; };
 		4E79A89725A7947400499F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A89625A7947400499F34 /* AppDelegate.swift */; };
 		4E79A89925A7947400499F34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A89825A7947400499F34 /* SceneDelegate.swift */; };
 		4E79A89B25A7947400499F34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A89A25A7947400499F34 /* ViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0E952925AA294300C142CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4E0E952F25AA53BB00C142CB /* Extension+ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ImageView.swift"; sourceTree = "<group>"; };
 		4E79A89325A7947400499F34 /* Facebook_interview_NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook_interview_NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E79A89625A7947400499F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E79A89825A7947400499F34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E0E952E25AA53A600C142CB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E0E952F25AA53BB00C142CB /* Extension+ImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4E79A88A25A7947400499F34 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		4E79A89525A7947400499F34 /* Facebook_interview_NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E0E952E25AA53A600C142CB /* Extensions */,
 				4E79A8E225A7CC9A00499F34 /* ViewModels */,
 				4E79A8D725A7BD6C00499F34 /* Services */,
 				4E79A8D625A7BA7E00499F34 /* StoryBoards */,
@@ -150,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4E79A89A25A7947400499F34 /* ViewController.swift */,
+				4E0E952925AA294300C142CB /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,12 +324,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E79A89B25A7947400499F34 /* ViewController.swift in Sources */,
+				4E0E953025AA53BB00C142CB /* Extension+ImageView.swift in Sources */,
 				4E79A89725A7947400499F34 /* AppDelegate.swift in Sources */,
 				4E79A89925A7947400499F34 /* SceneDelegate.swift in Sources */,
 				4E79A8D025A7B8A000499F34 /* ResultModel.swift in Sources */,
 				4E79A8E425A7CCE900499F34 /* NewsResultViewModel.swift in Sources */,
 				4E79A8D925A7BD7800499F34 /* Routers.swift in Sources */,
 				4E79A8DE25A7C26B00499F34 /* NetworkService.swift in Sources */,
+				4E0E952A25AA294300C142CB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

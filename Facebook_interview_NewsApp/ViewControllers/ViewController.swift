@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var keywordTextView: UITextField!
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBOutlet weak var totalResults: UILabel!
@@ -30,7 +31,6 @@ class ViewController: UIViewController {
                 
                 self.statusLabel.text = result.status
                 self.totalResults.text = "total results: \(result.totalResults)"
-                
                 self.articles = result.articles
             }
         }
@@ -42,6 +42,8 @@ class ViewController: UIViewController {
         didSet {
             mainTableView.reloadData()
         }
+    }
+    @IBAction func submitButtonTapped(_ sender: UIButton) {
     }
     
 }
