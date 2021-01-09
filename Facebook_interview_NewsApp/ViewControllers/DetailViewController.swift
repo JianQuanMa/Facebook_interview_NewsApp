@@ -12,18 +12,52 @@ class DetailViewController: UIViewController{
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var despTextView: UITextView!
-    var article: Article?
+//    var article: Article? {
+//        didSet{
+//            print("set article")
+//            updateUI()
+//        }
+//    }
     override func viewDidLoad() {
-        guard let article = article else{return}
+        super.viewDidLoad()
+    //    self.view.backgroundColor = .red
+   //     guard let article = article else{return}
+        print("I did presnt the detailviewcontroller")
         updateUI()
     }
     
-    func updateUI(){
-        self.titleLabel.text = self.article?.title
-        if let imageURLString: String = self.article?.urlToImage{
-            let imageURl = URL(string: imageURLString)
+    let article: Article
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
+    }
+
+    init(article: Article) {
+        self.article = article
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    private func updateUI(){
+        print("updating uis")
+  //      guard let article = article else{return}
+   //     self.titleLabel?.text = self.article?.title
+         if let imageURLString: String = self.article.urlToImage{
+            //if imageURL is not nil, try to download it
+            if let imageURl = URL(string: imageURLString){
      //       let imageData = UIImage(data: imageURl)
+                print("Thread: \(Thread.current)")
+                self.imageView?.download(from: imageURl)
+                
+                
+            }else
+            // if the imageview url is nil, don't try to download the data and set the height constraint of the
+            // the uiimageview to zero
+            {
+                
+            }
+            
         }
+     //   self.despTextView?.text = article?.content
     }
     
 }
@@ -38,6 +72,7 @@ extension UIImageView{
                             let data = data,
                             let image = UIImage(data: data)
                             else { return }
+            
                         DispatchQueue.main.async() { [weak self] in
                             self?.image = image
                         }

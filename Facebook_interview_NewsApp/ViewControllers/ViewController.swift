@@ -34,10 +34,17 @@ class ViewController: UIViewController {
                 self.articles = result.articles
             }
         }
-
+        
         mainTableView.register(UITableViewCell.self, forCellReuseIdentifier: "something")
     }
-
+    
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //        if segue.identifier == "viewControllerToDetailViewControllerSegue"{
+    //            let detailViewController = segue.destination as? DetailViewController
+    //          //  detailViewController?.article = self.articles[]
+    //        }
+    //    }
+    
     var articles: [Article] = [] {
         didSet {
             mainTableView.reloadData()
@@ -65,5 +72,38 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+   //     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let detailViewController = storyboard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        let detailViewController = DetailViewController(article: articles[indexPath.row])
+     //   let myViewcontroller = MyController(article: self.articles[indexPath.row])
+  //      present(myViewcontroller, animated: false)
+        present(detailViewController, animated: false)
+        //   prepare(for: UIStoryboardSegue(identifier: "viewControllerToDetailViewControllerSegue", source: self, destination: detailViewController), sender: nil)
+        //    detailViewController.article = articles[indexPath.row]
+      //  self.navigationController?.pushViewController(detailViewController, animated: false)
+    //    performSegue(withIdentifier: "viewControllerToDetailViewControllerSegue", sender: nil)
+        //    detailViewController.article = articles[indexPath.row]
+        //    present(detailViewController, animated: true)
+    }
     
+}
+
+class MyController: UIViewController {
+
+    let article: Article?
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
+    }
+
+    init(article: Article) {
+        self.article = article
+        super.init(nibName: nil, bundle: nil)
+        
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = .red
+    }
 }

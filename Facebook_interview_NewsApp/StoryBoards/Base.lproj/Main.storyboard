@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="-146.37681159420291" y="-37.5"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--DetailViewController-->
         <scene sceneID="k4s-M6-Tqg">
             <objects>
-                <viewController id="9XK-S0-5j5" customClass="DetailViewController" customModule="Facebook_interview_NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="9XK-S0-5j5" customClass="DetailViewController" customModule="Facebook_interview_NewsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfj-PU-9nR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
