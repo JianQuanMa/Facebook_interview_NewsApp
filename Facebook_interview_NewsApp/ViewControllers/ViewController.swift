@@ -18,9 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let appleKeyword = SearchKeyword(keyword: "apple")
-        
-        NetworkService.shared.getEverything(with: appleKeyword) { [weak self] result in
+        NetworkService.shared.getEverything(with: .apple) { [weak self] result in
             guard let self = self else { return }
             print("-=- isMainThread111 \(Thread.isMainThread)")
             switch result {
@@ -38,21 +36,14 @@ class ViewController: UIViewController {
         mainTableView.register(UITableViewCell.self, forCellReuseIdentifier: "something")
     }
     
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        if segue.identifier == "viewControllerToDetailViewControllerSegue"{
-    //            let detailViewController = segue.destination as? DetailViewController
-    //          //  detailViewController?.article = self.articles[]
-    //        }
-    //    }
-    
     var articles: [Article] = [] {
         didSet {
             mainTableView.reloadData()
         }
     }
     @IBAction func submitButtonTapped(_ sender: UIButton) {
+        
     }
-    
 }
 
 
@@ -73,37 +64,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-   //     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let detailViewController = storyboard.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
-        let detailViewController = DetailViewController(article: articles[indexPath.row])
-     //   let myViewcontroller = MyController(article: self.articles[indexPath.row])
-  //      present(myViewcontroller, animated: false)
+        let detailViewController = UIStoryboard(
+            name: "Main",
+            bundle: nil
+        ).instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        detailViewController.article = articles[indexPath.row]
         present(detailViewController, animated: false)
-        //   prepare(for: UIStoryboardSegue(identifier: "viewControllerToDetailViewControllerSegue", source: self, destination: detailViewController), sender: nil)
-        //    detailViewController.article = articles[indexPath.row]
-      //  self.navigationController?.pushViewController(detailViewController, animated: false)
-    //    performSegue(withIdentifier: "viewControllerToDetailViewControllerSegue", sender: nil)
-        //    detailViewController.article = articles[indexPath.row]
-        //    present(detailViewController, animated: true)
     }
     
-}
-
-class MyController: UIViewController {
-
-    let article: Article?
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError()
-    }
-
-    init(article: Article) {
-        self.article = article
-        super.init(nibName: nil, bundle: nil)
-        
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = .red
-    }
 }

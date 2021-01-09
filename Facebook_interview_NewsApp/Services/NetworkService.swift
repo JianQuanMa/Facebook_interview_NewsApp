@@ -56,4 +56,5 @@ struct SearchKeyword {
     let keyword: String
     
     static let bitcoin = SearchKeyword(keyword: "bitcoin")
+    static let apple = SearchKeyword(keyword: "apple")
 }
