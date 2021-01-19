@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Router{
+struct Network{
     func getEverything(with keyword: String) -> URL?{
         guard let url = URL(string: "\(Constants.baseURLString)?q=\(keyword)&apiKey=\(Constants.apiKeyString)") else{return nil}
         return url

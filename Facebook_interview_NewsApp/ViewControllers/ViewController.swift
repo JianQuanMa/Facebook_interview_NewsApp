@@ -23,9 +23,8 @@ class ViewController: UIViewController {
             print("-=- isMainThread111 \(Thread.isMainThread)")
             switch result {
             case .failure(let error):
-                print("-=- hand the error however you want")
+                print("The error is: \(error.localizedDescription)")
             case .success(let result):
-                print("-=- handle the success")
                 
                 self.statusLabel.text = result.status
                 self.totalResults.text = "total results: \(result.totalResults)"
@@ -69,7 +68,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             bundle: nil
         ).instantiateViewController(identifier: "DetailViewController") as! DetailViewController
         detailViewController.article = articles[indexPath.row]
-        present(detailViewController, animated: false)
+        present(detailViewController, animated: true)
     }
     
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import WebKit
 
 class DetailViewController: UIViewController{
     @IBOutlet weak var stackview: UIStackView!
@@ -48,6 +49,14 @@ class DetailViewController: UIViewController{
             
         }
 
+    }
+    @IBAction func linkToSourceButtonTapped(_ sender: UIButton) {
+        
+        let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        self.view.addSubview(webView)
+   //     guard let article = article else {return}
+        guard let article = article, let url = URL(string: article.url) else {return}
+        webView.load(URLRequest(url: url))
     }
     
 }
