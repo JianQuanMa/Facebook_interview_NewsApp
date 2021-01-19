@@ -19,6 +19,8 @@ class DetailViewController: UIViewController{
             updateUI()
         }
     }
+    
+    lazy var webView = WKWebView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,8 @@ class DetailViewController: UIViewController{
     }
     
     private func updateUI(){
+        let backButton = UIBarButtonItem(title: "back", style: .done, target: self.webView, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = backButton
         print("updating uis")
   //      guard let article = article else{return}
         self.titleLabel?.text = self.article?.title
@@ -52,11 +56,17 @@ class DetailViewController: UIViewController{
     }
     @IBAction func linkToSourceButtonTapped(_ sender: UIButton) {
         
-        let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
         self.view.addSubview(webView)
    //     guard let article = article else {return}
+        let backButton = UIBarButtonItem(title: "back", style: .done, target: self, action: #selector(self.back))
+        
         guard let article = article, let url = URL(string: article.url) else {return}
-        webView.load(URLRequest(url: url))
+        DispatchQueue.main.async{ [weak self] in
+            self!.webView.load(URLRequest(url: url))}
+    }
+    @objc func back(){
+        dismiss(animated: true)
     }
     
 }
