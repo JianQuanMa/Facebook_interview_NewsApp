@@ -13,6 +13,7 @@ class DetailViewController: UIViewController{
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var despTextView: UITextView!
+    @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     var article: Article? {
         didSet{
             print("set article")
@@ -40,15 +41,9 @@ class DetailViewController: UIViewController{
             //if imageURL is not nil, try to download it
             if let imageURl = URL(string: imageURLString){
      //       let imageData = UIImage(data: imageURl)
-                print("Thread: \(Thread.current) \(imageView)")
                 self.imageView?.download(from: imageURl)
-                
-                
-            }else
-            // if the imageview url is nil, don't try to download the data and set the height constraint of the
-            // the uiimageview to zero
-            {
-                
+            }else{
+                self.imageViewHeightConstraint.constant = 0
             }
             
         }
@@ -56,11 +51,13 @@ class DetailViewController: UIViewController{
     }
     @IBAction func linkToSourceButtonTapped(_ sender: UIButton) {
         
-        webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+         webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
         self.view.addSubview(webView)
    //     guard let article = article else {return}
-        let backButton = UIBarButtonItem(title: "back", style: .done, target: self, action: #selector(self.back))
+   //     let backButton = UIBarButtonItem(title: "back", style: .done, target: self, action: #selector(self.webView.goBack))
         
+        self.webView.gestureRecognizers?.append(UIGestureRecognizer(target: self.webView, action: #selector (self.back)))
+        self.webView.allowsBackForwardNavigationGestures = true
         guard let article = article, let url = URL(string: article.url) else {return}
         DispatchQueue.main.async{ [weak self] in
             self!.webView.load(URLRequest(url: url))}
