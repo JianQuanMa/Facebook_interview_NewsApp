@@ -16,7 +16,6 @@ class DetailViewController: UIViewController{
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
     var article: Article? {
         didSet{
-            print("set article")
             updateUI()
         }
     }
@@ -25,9 +24,6 @@ class DetailViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    //    self.view.backgroundColor = .red
-   //     guard let article = article else{return}
-        print("I did presnt the detailviewcontroller")
         updateUI()
     }
     
