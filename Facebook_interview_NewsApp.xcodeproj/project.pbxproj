@@ -20,6 +20,9 @@
 		4E79A8D925A7BD7800499F34 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8D825A7BD7800499F34 /* Network.swift */; };
 		4E79A8DE25A7C26B00499F34 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8DD25A7C26B00499F34 /* NetworkService.swift */; };
 		4E79A8E425A7CCE900499F34 /* NewsResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E79A8E325A7CCE900499F34 /* NewsResultViewModel.swift */; };
+		71EA0A261136B959515D96F9 /* Pods_Facebook_interview_NewsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5797B0FF459BA602EFDD4DA9 /* Pods_Facebook_interview_NewsApp.framework */; };
+		A823487989E2B4675FF93C91 /* Pods_Facebook_interview_NewsApp_Facebook_interview_NewsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24C6981CA2125E8C1B3F4A8 /* Pods_Facebook_interview_NewsApp_Facebook_interview_NewsAppUITests.framework */; };
+		DB38285FBEDD77609155A260 /* Pods_Facebook_interview_NewsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1B91C234F15741C55B6B52 /* Pods_Facebook_interview_NewsAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F6FB3F06CFFD5EE9D2AB3FF /* Pods-Facebook_interview_NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook_interview_NewsApp.debug.xcconfig"; path = "Target Support Files/Pods-Facebook_interview_NewsApp/Pods-Facebook_interview_NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1E1B91C234F15741C55B6B52 /* Pods_Facebook_interview_NewsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_interview_NewsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477D4613CAB61483FDC53D7A /* Pods-Facebook_interview_NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook_interview_NewsApp.release.xcconfig"; path = "Target Support Files/Pods-Facebook_interview_NewsApp/Pods-Facebook_interview_NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 		4E0E952925AA294300C142CB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4E79A89325A7947400499F34 /* Facebook_interview_NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Facebook_interview_NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E79A89625A7947400499F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,12 @@
 		4E79A8D825A7BD7800499F34 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4E79A8DD25A7C26B00499F34 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		4E79A8E325A7CCE900499F34 /* NewsResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResultViewModel.swift; sourceTree = "<group>"; };
+		5797B0FF459BA602EFDD4DA9 /* Pods_Facebook_interview_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_interview_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B67EC16AE1FF7830B20E61 /* Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCCFE2CB9E76D34015F74D73 /* Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.release.xcconfig"; path = "Target Support Files/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C38B3D32F6343A3514C1DA89 /* Pods-Facebook_interview_NewsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook_interview_NewsAppTests.release.xcconfig"; path = "Target Support Files/Pods-Facebook_interview_NewsAppTests/Pods-Facebook_interview_NewsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4B5FE2B7B2F4F4A64E1C945 /* Pods-Facebook_interview_NewsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Facebook_interview_NewsAppTests.debug.xcconfig"; path = "Target Support Files/Pods-Facebook_interview_NewsAppTests/Pods-Facebook_interview_NewsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D24C6981CA2125E8C1B3F4A8 /* Pods_Facebook_interview_NewsApp_Facebook_interview_NewsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Facebook_interview_NewsApp_Facebook_interview_NewsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71EA0A261136B959515D96F9 /* Pods_Facebook_interview_NewsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB38285FBEDD77609155A260 /* Pods_Facebook_interview_NewsAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A823487989E2B4675FF93C91 /* Pods_Facebook_interview_NewsApp_Facebook_interview_NewsAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222228607901B5F5946B1BFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5797B0FF459BA602EFDD4DA9 /* Pods_Facebook_interview_NewsApp.framework */,
+				D24C6981CA2125E8C1B3F4A8 /* Pods_Facebook_interview_NewsApp_Facebook_interview_NewsAppUITests.framework */,
+				1E1B91C234F15741C55B6B52 /* Pods_Facebook_interview_NewsAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4E0E952E25AA53A600C142CB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +125,8 @@
 				4E79A8AC25A7947600499F34 /* Facebook_interview_NewsAppTests */,
 				4E79A8B725A7947600499F34 /* Facebook_interview_NewsAppUITests */,
 				4E79A89425A7947400499F34 /* Products */,
+				75436AA838D3705291861BD1 /* Pods */,
+				222228607901B5F5946B1BFD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,6 +218,20 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		75436AA838D3705291861BD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F6FB3F06CFFD5EE9D2AB3FF /* Pods-Facebook_interview_NewsApp.debug.xcconfig */,
+				477D4613CAB61483FDC53D7A /* Pods-Facebook_interview_NewsApp.release.xcconfig */,
+				71B67EC16AE1FF7830B20E61 /* Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.debug.xcconfig */,
+				BCCFE2CB9E76D34015F74D73 /* Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.release.xcconfig */,
+				C4B5FE2B7B2F4F4A64E1C945 /* Pods-Facebook_interview_NewsAppTests.debug.xcconfig */,
+				C38B3D32F6343A3514C1DA89 /* Pods-Facebook_interview_NewsAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -198,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E79A8BD25A7947600499F34 /* Build configuration list for PBXNativeTarget "Facebook_interview_NewsApp" */;
 			buildPhases = (
+				D7F256ECEC3677531CDEF266 /* [CP] Check Pods Manifest.lock */,
 				4E79A88F25A7947400499F34 /* Sources */,
 				4E79A89025A7947400499F34 /* Frameworks */,
 				4E79A89125A7947400499F34 /* Resources */,
+				8D3D943C7903D424FD935235 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +258,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E79A8C025A7947600499F34 /* Build configuration list for PBXNativeTarget "Facebook_interview_NewsAppTests" */;
 			buildPhases = (
+				3913B93E40996BD19BDA215C /* [CP] Check Pods Manifest.lock */,
 				4E79A8A525A7947600499F34 /* Sources */,
 				4E79A8A625A7947600499F34 /* Frameworks */,
 				4E79A8A725A7947600499F34 /* Resources */,
@@ -233,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E79A8C325A7947600499F34 /* Build configuration list for PBXNativeTarget "Facebook_interview_NewsAppUITests" */;
 			buildPhases = (
+				56AD8EE182AF3243F0E28D2E /* [CP] Check Pods Manifest.lock */,
 				4E79A8B025A7947600499F34 /* Sources */,
 				4E79A8B125A7947600499F34 /* Frameworks */,
 				4E79A8B225A7947600499F34 /* Resources */,
+				FFAC074B4D70E1C1F38B950E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -314,6 +360,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3913B93E40996BD19BDA215C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Facebook_interview_NewsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56AD8EE182AF3243F0E28D2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D3D943C7903D424FD935235 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Facebook_interview_NewsApp/Pods-Facebook_interview_NewsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Facebook_interview_NewsApp/Pods-Facebook_interview_NewsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Facebook_interview_NewsApp/Pods-Facebook_interview_NewsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7F256ECEC3677531CDEF266 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Facebook_interview_NewsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAC074B4D70E1C1F38B950E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests/Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E79A88F25A7947400499F34 /* Sources */ = {
@@ -500,6 +649,7 @@
 		};
 		4E79A8BE25A7947600499F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6FB3F06CFFD5EE9D2AB3FF /* Pods-Facebook_interview_NewsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -519,6 +669,7 @@
 		};
 		4E79A8BF25A7947600499F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477D4613CAB61483FDC53D7A /* Pods-Facebook_interview_NewsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -538,6 +689,7 @@
 		};
 		4E79A8C125A7947600499F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B5FE2B7B2F4F4A64E1C945 /* Pods-Facebook_interview_NewsAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +709,7 @@
 		};
 		4E79A8C225A7947600499F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C38B3D32F6343A3514C1DA89 /* Pods-Facebook_interview_NewsAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -576,6 +729,7 @@
 		};
 		4E79A8C425A7947600499F34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B67EC16AE1FF7830B20E61 /* Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,6 +749,7 @@
 		};
 		4E79A8C525A7947600499F34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCFE2CB9E76D34015F74D73 /* Pods-Facebook_interview_NewsApp-Facebook_interview_NewsAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
